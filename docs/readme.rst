@@ -19,6 +19,7 @@ Basic install
 -------------
 
 pip install [package name] --upgrade
+
 (install without cache: pip install [package name] --no-cache-dir  )
 
 
