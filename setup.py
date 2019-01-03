@@ -33,15 +33,14 @@ sys.stdout.write("pypi-project: " + __version__ + '\n')
 
 setup(name='pypi-project',
 	scripts=['pypi-project'],
-	install_requires=['azure-cli','awscli','docopt'],
 	python_requires='>=2.6, <3',
     version=__version__,
-	description='pypi-project - Cloud Tools by the1bit',
+	description='pypi-project - Empty example PYPI package by The1bit',
 	long_description=long_description + "\n" + license_description,
 	url='https://github.com/the1bit/pypi-project',
-	author='Tibor Kiss',
-	author_email='the1bithu@gmail.com',
-	keywords='cloud azure aws management python microsoft the1bithu',
+	author='the1bit',
+	author_email='youremail@mustbe.valid',
+	keywords='python the1bithu',
 	classifiers=[  # Optional
 		# How mature is this project? Common values are
 		#   3 - Alpha

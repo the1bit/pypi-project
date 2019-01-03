@@ -5,6 +5,7 @@ Change log
 ----------
 
 * version 0.0.0.1
+    * Init files and directory structure
 
 
 
@@ -21,6 +22,7 @@ Basic install
 pip install [package name] --upgrade
 
 (install without cache: pip install [package name] --no-cache-dir  )
+
 
 
 You can find the detailed documentation in https://github.com/the1bit/pypi-project.
