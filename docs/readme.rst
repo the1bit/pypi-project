@@ -4,6 +4,8 @@ Empty example PYPI package by The1bit
 Change log 
 ----------
 
+* version 0.0.0.3
+    * Test Azure DevOps pipeline
 * version 0.0.0.1
     * Init files and directory structure
 
