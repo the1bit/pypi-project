@@ -30,6 +30,7 @@ if __name__ == '__main__':
   # Core module  
   if docopt(__doc__)["core"]:
       from .core.pypiproject_core import *
+      from .core.pypiproject_unittest import *
       # Input text
       if docopt(__doc__)["--input"]:
         # Get your text
