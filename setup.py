@@ -16,8 +16,8 @@ here = path.abspath(path.dirname(__file__))
 
 
 # Get the long description from the README file
-with open('docs/readme.rst', 'r', encoding='utf-8') as f:
-    README = f.read()
+with open("docs/readme.rst", "r") as fh:
+    README = fh.read()
 
 ## Version of the current package
 from pypiproject.version import __version__
@@ -38,7 +38,7 @@ setup(name='pypi-project',
     version=__version__,
 	description='pypi-project - Empty example PYPI package by The1bit',
 	long_description=README,
-	long_description_content_type='text/plain',
+	long_description_content_type="text/markdown",
 	url='https://github.com/the1bit/pypi-project',
 	author='the1bit',
 	author_email='youremail@mustbe.valid',
