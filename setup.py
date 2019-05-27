@@ -13,17 +13,14 @@ import sys
 
 here = path.abspath(path.dirname(__file__))
 
+
+
 # Get the long description from the README file
-with open(path.join(here, 'docs/readme.rst'), encoding='utf-8') as f:
-	long_description = f.read()
-
-# Get the license description from the license file
-with open(path.join(here, 'docs/LICENSE.txt'), encoding='utf-8') as l:
-	license_description = l.read()
-
+with open("docs/readme.md", "r") as fh:
+    README = fh.read()
 
 ## Version of the current package
-from modules.version import __version__
+from pypiproject.version import __version__
 
 sys.stdout.write("pypi-project: " + __version__ + '\n')
 
@@ -32,11 +29,16 @@ sys.stdout.write("pypi-project: " + __version__ + '\n')
 # Fields marked as "Optional" may be commented out.
 
 setup(name='pypi-project',
-	scripts=['pypi-project'],
+	scripts=[
+        'pypr',
+        'pypr.completion.sh',
+        'pypr.bat',
+    ],
 	python_requires='>=2.6, <3',
     version=__version__,
 	description='pypi-project - Empty example PYPI package by The1bit',
-	long_description=long_description + "\n" + license_description,
+	long_description=README,
+	long_description_content_type="text/markdown",
 	url='https://github.com/the1bit/pypi-project',
 	author='the1bit',
 	author_email='youremail@mustbe.valid',
@@ -62,6 +64,9 @@ setup(name='pypi-project',
 		'Programming Language :: Python :: 2',
 		'Programming Language :: Python :: 2.7'
 	],
-	  packages=['modules'],
+	  packages=['pypiproject'],
+		install_requires=[
+			'docopt'
+		],
 	  license='MIT',
 	  zip_safe=True)
