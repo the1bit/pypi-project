@@ -64,7 +64,10 @@ setup(name='pypi-project',
 		'Programming Language :: Python :: 2',
 		'Programming Language :: Python :: 2.7'
 	],
-	  packages=['pypiproject'],
+	  packages=[
+			'pypiproject',
+			'pypiproject.core'
+			],
 		install_requires=[
 			'docopt'
 		],
