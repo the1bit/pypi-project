@@ -4,7 +4,7 @@ Empty example PYPI package by The1bit
 Change log 
 ----------
 
-* version 0.0.1.3
+* version 0.0.1.4
     * Execute this from command-line (pypr -v)
 * version 0.0.0.1
     * Init files and directory structure
@@ -30,5 +30,5 @@ pip install [package name] --upgrade
 You can find the detailed documentation in https://github.com/the1bit/pypi-project.
 
 
-Please read the license related information.
 
+.. include:: LICENSE.rst
