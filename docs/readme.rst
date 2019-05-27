@@ -4,7 +4,7 @@ Empty example PYPI package by The1bit
 Change log 
 ----------
 
-* version 0.0.1.1
+* version 0.0.1.2
     * Execute this from command-line (pypr -v)
 * version 0.0.0.1
     * Init files and directory structure
