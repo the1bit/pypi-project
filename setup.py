@@ -13,14 +13,14 @@ import sys
 
 here = path.abspath(path.dirname(__file__))
 
+
+
 # Get the long description from the README file
-with open(path.join(here, 'docs/readme.rst'), encoding='utf-8') as f:
-	long_description = f.read()
-
-# Get the license description from the license file
-with open(path.join(here, 'docs/LICENSE.txt'), encoding='utf-8') as l:
-	license_description = l.read()
-
+with open('docs/readme.rst', 'r', encoding='utf-8') as f:
+    README = f.read()
+# Get the license description from the license file	
+with open('docs/LICENSE.rst', 'r', encoding='utf-8') as f:
+    LIC = f.read()
 
 ## Version of the current package
 from pypiproject.version import __version__
@@ -40,7 +40,7 @@ setup(name='pypi-project',
 	python_requires='>=2.6, <3',
     version=__version__,
 	description='pypi-project - Empty example PYPI package by The1bit',
-	long_description=long_description + "\n" + license_description,
+	long_description=README + '\n\n' + LIC,
 	url='https://github.com/the1bit/pypi-project',
 	author='the1bit',
 	author_email='youremail@mustbe.valid',
