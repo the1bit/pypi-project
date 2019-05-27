@@ -4,7 +4,7 @@ Empty example PYPI package by The1bit
 Change log 
 ----------
 
-* version 0.0.1.7
+* version 0.0.1.8
     * Basic unittest for Core module
 * version 0.0.1.6
     * Execute this from command-line (pypr -v)
@@ -35,7 +35,7 @@ Usage
 
 ## From command line
 
-```bash
+```
 pypr -v
 ```
 
@@ -43,7 +43,6 @@ pypr -v
 
 ```
 import pypiproject
-
 ```
 
 LICENSE
