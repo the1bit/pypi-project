@@ -5,8 +5,9 @@ Empty example PYPI package by The1bit
 Change log 
 ###########
 
-* version 0.0.1.10
+* version 0.0.1.11
     * Basic unittest for Core module
+    * Documentation
 * version 0.0.1.6
     * Execute this from command-line (pypr -v)
 * version 0.0.0.1
@@ -85,7 +86,7 @@ From command line
 Result: 
 .. code-block::
 
-    0.0.1.10
+    0.0.1.11
 
 
 
