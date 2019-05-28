@@ -16,7 +16,7 @@ here = path.abspath(path.dirname(__file__))
 
 
 # Get the long description from the README file
-with open("docs/readme.md", "r") as fh:
+with open("docs/readme.rst", "r") as fh:
     README = fh.read()
 
 ## Version of the current package
