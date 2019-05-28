@@ -4,7 +4,7 @@ Empty example PYPI package by The1bit
 Change log 
 ----------
 
-* version 0.0.1.8
+* version 0.0.1.9
     * Basic unittest for Core module
 * version 0.0.1.6
     * Execute this from command-line (pypr -v)
@@ -38,12 +38,47 @@ Usage
 ```
 pypr -v
 ```
+Result: 
+
+```
+
 
 ## From Python
 
 ```
 import pypiproject
 ```
+
+Known issues
+------------
+
+* **Permission denied on /usr/bin/pypr**
+Sometimes you are facing the following issue when you execute the **pypr** command:
+
+```
+    -bash: /usr/bin/pypr: Permission denied
+```
+
+Solution to execute the following command:
+
+```
+    sudo chmod +x /usr/bin/pypr
+```
+
+* **Command not found on /usr/bin/pypr**
+Although the package is well prepared sometimes you are facing the following issue after a package update when you execute the **pypr** command:
+
+```
+    /usr/bin/pypr: line 2: $'\r': command not found
+    /usr/bin/pypr: line 19: syntax error: unexpected end of file
+```
+
+Solution to execute the following command:
+
+```
+    sudo dos2unix /usr/bin/pypr
+```
+
 
 LICENSE
 -------
