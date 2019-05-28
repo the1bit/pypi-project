@@ -9,3 +9,4 @@ case $SHELL in
 esac
 
 eval "$(register-python-argcomplete pnt)"
+
