@@ -12,7 +12,3 @@ export PYTHONPATH="${DIR}/src:${PYTHONPATH}"
 
 
 python -m pypiproject "$@"
-
-
-
-
