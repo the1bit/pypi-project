@@ -25,9 +25,9 @@ Requirements
 Basic install
 #############
 
-::
+.. code-block::
 
-pip install pypi-project --upgrade
+    pip install pypi-project --upgrade
 
 
 (install without cache: pip install pypi-project --no-cache-dir  )
@@ -56,8 +56,8 @@ From command line
     * **-o --output**          output format default is string. Possible values: string, json
 
 You merely type the **pypr** command to commandline with the required parameters.
-* ``` pypr --version ``` or ``` pypr -v ``` : Get version of our package
-* ``` pypr core --input TEXT ``` or ``` pypr core -i TEXT -o string ``` : Write out to screen the TEXT in string format. (module: core)
+* *pypr --version* or *pypr -v* : Get version of our package
+* *pypr core --input TEXT * or *pypr core -i TEXT -o string* : Write out to screen the TEXT in string format. (module: core)
 * ``` pypr core -i TEXT --output json ``` : Write out to screen the TEXT in json format. (module: core)
 
 From Python
@@ -65,9 +65,10 @@ From Python
 
 Import the required module from pypiproject package in python
 
-```python
-import pypiproject
-```
+.. code-block::
+
+    import pypiproject
+
 
 Examples
 ########
@@ -78,40 +79,47 @@ From command line
 1. Get version:
 """""""""""""""""""""
 
-```bash
-pypr -v
-```
-Result: 
+.. code-block::
 
-```bash
-0.0.1.9
-```
+    pypr -v
+
+
+Result: 
+.. code-block::
+
+    0.0.1.9
+
 
 
 2. Write out text in string format:
 """"""""""""""""""""""""""""""""""""""""
 
-```bash
-pypr core -i "Hello World"
-```
+.. code-block::
+
+    pypr core -i "Hello World"
+
 Result: 
 
-```bash
-Hello World
-```
+.. code-block::
+
+    Hello World
+
 
 
 3. Write out text in json format:
 """""""""""""""""""""""""""""""""""""""""
 
-```bash
-pypr core -i "Hello World" -o json
-```
+.. code-block::
+    
+    pypr core -i "Hello World" -o json
+
+
 Result: 
 
-```bash
-[{'text': 'Hello World'}]
-```
+.. code-block::
+    
+    [{'text': 'Hello World'}]
+
 
 
 From Python
@@ -122,51 +130,58 @@ Every example assumes you are in python shell
 1. Execute core module related unittest
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-```python
-from pypiproject.core.pypiproject_core_unittest import *
-testResult = runUnittests()
-```
+.. code-block::
+
+    from pypiproject.core.pypiproject_core_unittest import *
+    testResult = runUnittests()
+
 
 Result:
 
-```
-test_input (pypiproject.core.pypiproject_core_unittest.TestCoreModule) ... All tests passed so far!
-ok
-test_output (pypiproject.core.pypiproject_core_unittest.TestCoreModule) ... All tests passed so far!
-ok
+.. code-block::
 
-----------------------------------------------------------------------
-Ran 2 tests in 0.003s
+    test_input (pypiproject.core.pypiproject_core_unittest.TestCoreModule) ... All tests passed so far!
+    ok
+    test_output (pypiproject.core.pypiproject_core_unittest.TestCoreModule) ... All tests passed so far!
+    ok
 
-OK
-```
+    ----------------------------------------------------------------------
+    Ran 2 tests in 0.003s
+
+    OK
+
 
 2. Write out text in string format:
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-```python
-from pypiproject.core.pypiproject_core import *
-getText("Hello World")
-```
+.. code-block::
+
+    from pypiproject.core.pypiproject_core import *
+    getText("Hello World")
+
+
 Result: 
 
-```python
-Hello World
-```
+.. code-block::
+
+    Hello World
+
 
 
 3. Write out text in json format:
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-```python
-from pypiproject.core.pypiproject_core import *
-getText("Hello World", "json")
-```
+.. code-block::
+
+    from pypiproject.core.pypiproject_core import *
+    getText("Hello World", "json")
+
 Result: 
 
-```python
-{'text': 'Hello World'}
-```
+.. code-block::
+
+    {'text': 'Hello World'}
+
 
 
 Known issues
@@ -178,30 +193,34 @@ Known issues
 
 Sometimes you are facing the following issue when you execute the **pypr** command:
 
-```
--bash: /usr/bin/pypr: Permission denied
-```
+.. code-block::
+    
+    -bash: /usr/bin/pypr: Permission denied
+
 
 Solution to execute the following command:
 
-```
-sudo chmod +x /usr/bin/pypr
-```
+.. code-block::
+
+    sudo chmod +x /usr/bin/pypr
+
 
 **Command not found on /usr/bin/pypr**
 *******************************************
 Although the package is well prepared sometimes you are facing the following issue after a package update when you execute the **pypr** command:
 
-```
+.. code-block::
+
     /usr/bin/pypr: line 2: $'\r': command not found
     /usr/bin/pypr: line 19: syntax error: unexpected end of file
-```
+
 
 Solution to execute the following command:
 
-```
+.. code-block::
+
     sudo dos2unix /usr/bin/pypr
-```
+
 
 
 LICENSE (MIT)
