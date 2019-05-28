@@ -4,10 +4,7 @@ Usage:
   pypr core --input TEXT
   pypr core -i TEXT -o string
   pypr core -i TEXT --output json
-  
-
 Arguments:
-  PATH  destination path
 Options:
   -h --help            show this help message and exit
   -v --version         show version and exit
@@ -30,7 +27,7 @@ if __name__ == '__main__':
   # Core module  
   if docopt(__doc__)["core"]:
       from .core.pypiproject_core import *
-      from .core.pypiproject_unittest import *
+
       # Input text
       if docopt(__doc__)["--input"]:
         # Get your text
