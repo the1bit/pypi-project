@@ -55,14 +55,14 @@ Known issues
 * **Permission denied on /usr/bin/pypr**
 Sometimes you are facing the following issue when you execute the **pypr** command:
 
-```
-    -bash: /usr/bin/pypr: Permission denied
+```bash
+-bash: /usr/bin/pypr: Permission denied
 ```
 
 Solution to execute the following command:
 
 ```
-    sudo chmod +x /usr/bin/pypr
+sudo chmod +x /usr/bin/pypr
 ```
 
 * **Command not found on /usr/bin/pypr**
