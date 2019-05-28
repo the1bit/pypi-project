@@ -181,7 +181,7 @@ Solution to execute the following command:
 ```
 
 
-# LICENSE
+# LICENSE (MIT)
 
 
 Copyright (c) 2019
