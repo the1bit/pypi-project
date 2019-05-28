@@ -1,13 +1,11 @@
-**************************************
 Empty example PYPI package by The1bit
-**************************************
-
+############################################
 
 
 Change log 
 ###########
 
-* version 0.0.1.9
+* version 0.0.1.10
     * Basic unittest for Core module
 * version 0.0.1.6
     * Execute this from command-line (pypr -v)
@@ -87,7 +85,7 @@ From command line
 Result: 
 .. code-block::
 
-    0.0.1.9
+    0.0.1.10
 
 
 
