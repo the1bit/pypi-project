@@ -35,10 +35,6 @@ def runUnittests():
           suite.addTest(TestCoreModule(method))
     return unittest.TextTestRunner(verbosity=3).run(suite)
 
-#testCase = TestCoreModule() 
-
-#suite = unittest.TestLoader().loadTestsFromModule (TestCoreModule())
-#unittest.TextTestRunner(verbosity=3).run(suite)
 
 #if __name__ == 'pypiproject.core.pypiproject_core_unittest':
     #unittest.main()
